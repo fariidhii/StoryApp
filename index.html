@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story App</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192x192.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    
+    <header class="app-bar">
+        <div class="app-bar__menu">
+            <button id="hamburger" aria-label="Open navigation menu">☰</button>
+        </div>
+        <div class="app-bar__brand">
+            <h1>Story App</h1>
+        </div>
+        <nav id="navigationDrawer" class="app-bar__navigation">
+            <ul>
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/stories">Stories</a></li>
+                <li><a href="#/add">Add Story</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div id="content"></div>
+    </main>
+
+    <footer>
+        <p>© 2024 Story App. All rights reserved.</p>
+    </footer>
+
+    <!-- Tambahkan Leaflet di sini -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts/app.js" type="module"></script>
+</body>
+</html> 
