@@ -83,6 +83,11 @@ class App {
         const defaultRoute = '/home';
 
         const router = () => {
+            // Matikan kamera jika ada instance AddStoryView
+            if (window._addStoryView && typeof window._addStoryView.stopCamera === 'function') {
+                window._addStoryView.stopCamera();
+                window._addStoryView = null;
+            }
             this._renderNavLinks();
             const path = window.location.hash.slice(1) || defaultRoute;
             const route = routes[path] || routes[defaultRoute];

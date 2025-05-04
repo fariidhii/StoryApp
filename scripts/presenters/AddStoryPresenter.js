@@ -6,6 +6,7 @@ class AddStoryPresenter {
         this._model = new StoryModel();
         this._view = new AddStoryView();
         this._setupView();
+        window._addStoryView = this._view;
     }
 
     _setupView() {

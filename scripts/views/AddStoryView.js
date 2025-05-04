@@ -175,6 +175,10 @@ class AddStoryView {
             </div>
         `;
     }
+
+    stopCamera() {
+        this._stopCamera();
+    }
 }
 
 export default AddStoryView; 
